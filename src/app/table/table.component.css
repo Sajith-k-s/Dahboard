@@ -1,0 +1,9 @@
+table{
+    margin-top: 40px;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+mat-paginator{
+    margin-left: 10px;
+    border: 2px solid white;
+}

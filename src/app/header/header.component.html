@@ -1,0 +1,22 @@
+<div class="ss">
+    <mat-toolbar color="dark">
+      <button (click)="menuiconclicked()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Admin Dashboard</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>help_outline</mat-icon>
+      </button>
+      <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>person_outline</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+      <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Signout</button>
+       </mat-menu>
+      </mat-toolbar>
+
+    </div>

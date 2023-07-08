@@ -1,0 +1,45 @@
+
+
+
+                            site :  https://material.angular.io/
+
+            -> Install Material on your system - ng add @angular/material
+
+            -> create Components
+
+            1. Header - ng g c header
+            2. Footer - ng g c footer
+            3. Sisebar - ng g c sidebar
+            4. mainContent - ng g c mainContent
+
+        
+        1 Parent - child components communication
+        --------------------------------------
+    1 Child to Parent - @Output decorator
+
+    Parent -header component(toggle)
+    Child - side-bar component (app.component)
+
+    => EventEmitter -Used to generate userdefined events
+                -Its a class
+                -emit() is a method of EventEmitter class
+
+        i)header.html button (click)="menuIconClick()"
+        ii)header.ts- Userdefined event - @Output() toggle=new EventEmitter();
+        iii)app.html- <app-header (toggle)="sidebarToggle()">
+        iV)app.ts- sidebar:boolean=true
+        v)app.html- <mat-drawer mode="side" [opened]="sidebar">
+
+    2 Parent to Child component communication
+     
+     @Input() decorator
+
+    -Attribute Directives
+
+   Based on a class property we can apply style to the html element
+
+   1)Inbuild Attribute Directives : [ngClass]
+   2)Userdefined Attribute Directives
+
+   
+   Install highcharts in Angular - npm i highcharts-angular --save
